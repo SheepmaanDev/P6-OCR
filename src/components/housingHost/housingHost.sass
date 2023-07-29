@@ -1,0 +1,46 @@
+.housing__locationTags
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    color: #FF6060
+    @media screen and (max-width: 400px)
+        flex-direction: column
+    &__title
+        max-width: 600px
+        margin-bottom: 20px
+        @media screen and (max-width: 400px)
+            max-width: 335px
+        &__h1
+            font-size: 36px
+            margin-bottom: 8px
+            line-height: 142.6%
+            @media screen and (max-width: 650px)
+                font-size: 27px
+            @media screen and (max-width: 400px)
+                font-size: 18px
+        &__city
+            height: 26px
+            font-size: 18px
+            @media screen and (max-width: 400px)
+                height: 22px
+                font-size: 14px
+                width: 100%
+    &__tags
+        display: flex
+        flex-wrap: wrap
+        list-style: none
+        &__list
+            color: #fff
+            background: #FF6060
+            border-radius: 10px
+            padding: 5px 5px 5px 5px
+            width: 160px
+            text-align: center
+            margin: 0 10px 10px 0
+            @media screen and (max-width: 870px)
+                width: 140px
+                font-size: 13px
+            @media screen and (max-width: 550px)
+                width: 120px
+                font-size: 10px
+                padding: 5px

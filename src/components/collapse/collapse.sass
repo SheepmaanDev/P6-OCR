@@ -1,0 +1,46 @@
+.collapse
+    margin: 0 8.8% 0 8.8%
+    font-size: 17px
+    line-height: 142.6%
+    color: #ff6060
+    @media screen and (max-width: 600px)
+        margin: 0
+        font-size: 15px
+    @media screen and (max-width: 450px)
+        font-size: 13px
+    &__text
+        padding: 10px 0 10px 0
+    & .closed
+        max-height: 0
+        transition: max-height 500ms ease-out
+    & .opened
+        max-height: 500px
+        transition: max-height 500ms ease-in
+    & .closed, & .opened
+        overflow: hidden
+        padding: 0 20px 0 20px
+        border-radius: 0 0 5px 5px
+        background: #F6F6F6
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 30px
+        padding: 10px 15px
+        border-radius: 5px
+        background-color: #ff6060
+        color: #fff
+        font-size: 24px
+        @media screen and (max-width: 600px)
+            font-size: 19px
+        @media screen and (max-width: 450px)
+            height: 14px
+            font-size: 13px
+        &__arrow
+            width: 24px
+            height: 14px
+        & .inactive
+            transform: rotate(0.5turn)
+        & .active
+            transition: transform 400ms
+            

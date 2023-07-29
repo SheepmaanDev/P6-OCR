@@ -1,0 +1,21 @@
+.housing
+    max-width: 1440px
+    margin: auto
+    &__host
+        display: flex
+        justify-content: space-between
+        margin: 15px 6.9% 15px 6.9%
+        @media screen and (max-width: 775px)
+            flex-direction: column
+    &__collapse__container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        @media screen and (max-width: 650px)
+            flex-direction: column
+        margin: 0 6.9% 0 6.9%
+        &__desc, &__equip
+            margin: 0
+            width: 43%
+            @media screen and (max-width: 650px)
+                width: 100%
